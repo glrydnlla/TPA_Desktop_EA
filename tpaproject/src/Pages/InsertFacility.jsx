@@ -13,7 +13,7 @@ const InsertFacilityPage = () => {
     const navigate = useNavigate()
 
 
-    const facilityRef = collection(db, "facility");
+    const facilityRef = collection(db, "equipment");
 
     const createFacility = async () => {
         if (newEquipment!=="" && newQuantity!==0) {
