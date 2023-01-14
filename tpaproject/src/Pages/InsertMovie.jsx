@@ -95,6 +95,7 @@ const InsertMovie = () => {
                                                 producer: producer, 
                                                 prodID:producerID,
                                                 status: "Upcoming", 
+                                                schedule:"Pending",
                                                 title: title, 
                                                 totalViewer: 0,
                                                 totalShow:0,

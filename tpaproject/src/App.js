@@ -73,6 +73,7 @@ import ViewPendingMovie from './Pages/ViewPendingMovie'
 import ViewGeneratedMovie from './Pages/ViewGeneratedMovie';
 import ViewUpdateMovieSchedule from './Pages/ViewUpdateMovieSchedule';
 import UpdateMovieSchedule from './Pages/UpdateMovieSchedule';
+import MovieOrderPage from './Pages/MovieOrderPage'
 // const a = new auth();
 
 function App() {
@@ -170,6 +171,11 @@ function App() {
           </Route>
           <Route path="facility" element={<FacilityPage/>}>
             <Route path="view" element={<ViewAllEquipment/>}/>
+            <Route path="insert" element={<InsertFacilityPage/>}/>
+            {/* <Route path="update/:id" element={<UpdateLeaveRequestStatus/>}/> */}
+          </Route>
+          <Route path="movieOrder" element={<MovieOrderPage/>}>
+            <Route path="view/studio1" element={<ViewAllEquipment/>}/>
             <Route path="insert" element={<InsertFacilityPage/>}/>
             {/* <Route path="update/:id" element={<UpdateLeaveRequestStatus/>}/> */}
           </Route>

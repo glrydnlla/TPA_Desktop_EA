@@ -73,7 +73,7 @@ const GenerateSchedule = () => {
                         date.setDate(date.getDate()+1)
                         console.log("success add")
                     }
-                    await updateDoc(movieDoc, {status:"Generated"})
+                    await updateDoc(movieDoc, {schedule:"Generated"})
                     navigate(`/movieSchedule`)
                     
                 }

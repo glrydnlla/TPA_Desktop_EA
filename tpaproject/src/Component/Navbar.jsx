@@ -34,6 +34,7 @@ export function NavBar() {
             <Nav.Link href="/facility">Facility</Nav.Link>
             <Nav.Link href="/employeeShift">Employee Shift</Nav.Link>
             <Nav.Link href="/movieSchedule">Generate Schedule</Nav.Link>
+            <Nav.Link href="/movieOrder">Movie Order</Nav.Link>
             <Nav.Link href="/" onClick={logout}>Logout</Nav.Link>
             {/* <Link to="/login" onClick={logout}>Logout</Link> */}
           </Nav>

@@ -3,6 +3,7 @@ import { collection, query, where, getDocs } from "firebase/firestore";
 import { db } from '../firebase-config';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+import QrGen from '../QrGen';
 
 const ViewPromo = () => {
 
@@ -38,6 +39,7 @@ const ViewPromo = () => {
                 <tr>
                     <th>Promo ID</th>
                     <th>Promo</th>
+                    <th>QR code</th>
                     <th>Description</th>
                     <th>Category</th>
                     <th>Start Date</th>
@@ -50,6 +52,7 @@ const ViewPromo = () => {
                             <tr key={f.id}>
                                 <td>{f.id}</td>
                                 <td>{f.name}</td>
+                                <td><QrGen text={f.id}/></td>
                                 <td>{f.desc}</td>
                                 <td>{f.category}</td>
                                 <td>{f.startDate}</td>
